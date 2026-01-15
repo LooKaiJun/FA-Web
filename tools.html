@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calming Tools - Calm Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🧘</span>
+                    <span class="logo-text">Calm Companion</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="tools.html" class="nav-link">Tools</a></li>
+                    <li><a href="chat.html" class="nav-link">Chat</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <div class="container">
+                <h1>Calming Tools & Techniques</h1>
+                <p style="text-align: center; font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 50px;">
+                    Try these simple, evidence-based techniques anytime you need a moment of calm.
+                </p>
+
+                <div class="tools-grid">
+                    <!-- Tool 1: 4-6 Breathing -->
+                    <div class="tool-card">
+                        <div class="tool-icon">🌬️</div>
+                        <h3>4-6 Breathing</h3>
+                        <p>
+                            A simple breathing technique that calms your nervous system. Breathe in for 4 seconds, 
+                            hold for 6 seconds, and exhale for 4 seconds. Repeat to reduce anxiety and find calm.
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">
+                            💡 Best for: Immediate anxiety relief, before stressful events
+                        </p>
+                        <button class="btn-secondary" id="breathing-btn">Try Now</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Tool 2: 5-4-3-2-1 Grounding -->
+                    <div class="tool-card">
+                        <div class="tool-icon">⚓</div>
+                        <h3>5-4-3-2-1 Grounding</h3>
+                        <p>
+                            Reconnect with the present moment using your five senses. Notice 5 things you see, 
+                            4 you can touch, 3 you hear, 2 you smell, and 1 you taste.
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">
+                            💡 Best for: Panic, dissociation, spiraling thoughts
+                        </p>
+                        <button class="btn-secondary" id="grounding-btn">Try Now</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Tool 3: Kinder Thought -->
+                    <div class="tool-card">
+                        <div class="tool-icon">💚</div>
+                        <h3>Kinder Thought Reframing</h3>
+                        <p>
+                            Challenge negative self-talk by reframing it with compassion. Our mind often 
+                            exaggerates threats. Learn to speak to yourself like you'd speak to a good friend.
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">
+                            💡 Best for: Self-criticism, perfectionism, negative self-talk
+                        </p>
+                        <button class="btn-secondary" id="kinderthought-btn">Try Now</button>
+                        <div class="tool-output"></div>
+                    </div>
+                </div>
+
+                <!-- Tips Section -->
+                <div class="card" style="margin-top: 50px;">
+                    <h2>Tips for Using These Tools</h2>
+                    <ul style="color: var(--text-secondary); margin-left: 20px;">
+                        <li style="margin-bottom: 15px;">
+                            <strong>Practice when calm:</strong> Try these techniques when you're not anxious first. 
+                            This makes them easier to remember when you need them most.
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>Find your favorite:</strong> Everyone responds differently. Experiment to find 
+                            which techniques work best for you.
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>Be patient with yourself:</strong> Some tools may feel awkward at first. 
+                            That's normal. Give yourself time.
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>Combine techniques:</strong> Use multiple tools together for a more powerful effect.
+                        </li>
+                        <li>
+                            <strong>Talk to a professional:</strong> These tools complement (not replace) professional 
+                            support. If anxiety persists, please reach out to a mental health professional.
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">Need more personalized support?</p>
+                    <a href="chat.html" class="btn-primary">Chat with Calm Companion</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>This tool offers gentle support for everyday stress and worry. It is not a replacement for professional care.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

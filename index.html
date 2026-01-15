@@ -3,59 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calm Companion - Anxiety Support Chat</title>
+    <title>Calm Companion - Anxiety Support</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Calm Companion</h1>
-            <p class="hero-subtitle">A gentle space to slow down, breathe, and feel steady again.</p>
-            <button 
-                class="btn-primary" 
-                id="openChatBtn"
-                aria-label="Open chat with Calm Companion"
-            >
-                Open Chat
-            </button>
-        </div>
-    </div>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🧘</span>
+                    <span class="logo-text">Calm Companion</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="tools.html" class="nav-link">Tools</a></li>
+                    <li><a href="chat.html" class="nav-link">Chat</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Modal -->
-    <div 
-        class="modal-backdrop" 
-        id="modalBackdrop"
-        aria-hidden="true"
-    ></div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Calm Companion</h1>
+                <p class="hero-subtitle">A gentle space to slow down, breathe, and feel steady again.</p>
+                <a href="chat.html" class="btn-primary">Start Chatting</a>
+            </div>
+        </section>
 
-    <div 
-        class="modal" 
-        id="chatModal"
-        role="dialog"
-        aria-labelledby="modalTitle"
-        aria-modal="true"
-        aria-hidden="true"
-    >
-        <div class="modal-header">
-            <h2 id="modalTitle" class="modal-title">Calm Companion Chat</h2>
-            <button 
-                class="modal-close" 
-                id="closeModalBtn"
-                aria-label="Close chat"
-            >
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <iframe 
-                id="chatIframe"
-                class="chat-iframe"
-                src="https://cdn.botpress.cloud/webchat/v3.5/shareable.html?configUrl=https://files.bpcontent.cloud/2026/01/13/06/20260113064305-63X2QEFJ.json"
-                title="Calm Companion Chatbot"
-                allowfullscreen
-            ></iframe>
-        </div>
-    </div>
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2>How We Can Help</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Chat Support</h3>
+                        <p>Talk to our AI companion anytime, 24/7. We're here to listen and offer gentle guidance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌬️</div>
+                        <h3>Calming Tools</h3>
+                        <p>Learn breathing techniques, grounding exercises, and thought reframing to manage anxiety.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Judgment-Free Zone</h3>
+                        <p>A safe, private space where you can express yourself without judgment or pressure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
