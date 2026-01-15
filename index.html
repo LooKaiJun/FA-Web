@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Companion - Anxiety Support Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Calm Companion</h1>
+            <p class="hero-subtitle">A gentle space to slow down, breathe, and feel steady again.</p>
+            <button 
+                class="btn-primary" 
+                id="openChatBtn"
+                aria-label="Open chat with Calm Companion"
+            >
+                Open Chat
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div 
+        class="modal-backdrop" 
+        id="modalBackdrop"
+        aria-hidden="true"
+    ></div>
+
+    <div 
+        class="modal" 
+        id="chatModal"
+        role="dialog"
+        aria-labelledby="modalTitle"
+        aria-modal="true"
+        aria-hidden="true"
+    >
+        <div class="modal-header">
+            <h2 id="modalTitle" class="modal-title">Calm Companion Chat</h2>
+            <button 
+                class="modal-close" 
+                id="closeModalBtn"
+                aria-label="Close chat"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <iframe 
+                id="chatIframe"
+                class="chat-iframe"
+                src="https://cdn.botpress.cloud/webchat/v3.5/shareable.html?configUrl=https://files.bpcontent.cloud/2026/01/13/06/20260113064305-63X2QEFJ.json"
+                title="Calm Companion Chatbot"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>This tool offers gentle support for everyday stress and worry. It is not a replacement for professional care.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
